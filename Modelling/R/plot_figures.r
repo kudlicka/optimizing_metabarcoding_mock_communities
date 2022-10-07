@@ -22,14 +22,12 @@ nweights <- function(data) {
 pdf("logZ.pdf", width = 11, height = 8)
 par(mfrow = c(2, 2))
 boxplot(
-  as.numeric(Figures_L_1c[, 'lweight']),
   as.numeric(Figures_L[, 'lweight']),
   as.numeric(Figures_L_4k[, 'lweight']),
   as.numeric(Figures_L_4theta[, 'lweight']),
   as.numeric(Figures_L_4k4theta[, 'lweight']),
   main = "Lysis data, n specimens",
   names = c(
-    "1c",
     expression(paste("1k 1", theta)),
     expression(paste("4k 1", theta)),
     expression(paste("1k 4", theta)),
@@ -58,14 +56,12 @@ boxplot(
 )
 title("(b)", adj = 0, line = 1.5)
 boxplot(
-  as.numeric(Figures_H_1c[, 'lweight']),
   as.numeric(Figures_H[, 'lweight']),
   as.numeric(Figures_H_4k[, 'lweight']),
   as.numeric(Figures_H_4theta[, 'lweight']),
   as.numeric(Figures_H_4k4theta[, 'lweight']),
   main = "Homogenate data, n specimens",
   names = c(
-    "1c",
     expression(paste("1k 1", theta)),
     expression(paste("4k 1", theta)),
     expression(paste("1k 4", theta)),
